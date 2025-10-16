@@ -4,14 +4,12 @@
 - Créer les tests unitaires pour tous les cas de tests.
 
 | mots                               | Résultat attendu | Message affiché |
-|------------------------------------|------------------|---------------|
-| ["poney", "girafe", "hippopotame"] | hippopotame      | "hippopotame" |
-| ["chaton", "girafe"]               | chaton et girafe |               |
-| []                                 | None             |               |
-| ["chaton", "poney", 42]            | chaton           |               |
-| "chaton"                           | None             |               |
-|                                    |                  |               |
-|                                    |                  |               |
+|------------------------------------|------------------|-----------------|
+| ["poney", "girafe", "hippopotame"] | hippopotame      | "hippopotame"   |
+| ["chaton", "girafe"]               | chaton et girafe | "chaton"        |
+| []                                 | None             | None            |
+| ["chaton", "poney", 42]            | chaton           | "chaton"        |
+| "chaton"                           | None             | "c"              |
 
 # Tests unitaires pour la fonction _pourcentage_mots_max_
 | **mots**                                     | **taille** | **Résultat attendu** | **Remarque ou Message affiché**                                      |
