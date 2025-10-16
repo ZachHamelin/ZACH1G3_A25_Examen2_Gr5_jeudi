@@ -5,7 +5,7 @@
 
 | mots                               | Résultat attendu | Message affiché |
 |------------------------------------|------------------|-----------------|
-| ["poney", "girafe", "hippopotame"] | hippopotame      |                 |
+| ["poney", "girafe", "hippopotame"] | hippopotame      | "hippopotame"    |
 | ["chaton", "girafe"]               | chaton et girafe |                 |
 | []                                 | None             |                 |
 | ["chaton", "poney", 42]            | chaton           |                 |

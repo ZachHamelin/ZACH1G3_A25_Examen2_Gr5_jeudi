@@ -4,6 +4,14 @@ from debogage_mot_long import mot_plus_long, pourcentage_mots_max  # Remplacer p
 # Tests pour mot_plus_long
 # ============================
 # TODO: Tests unitaires pour la fonction mot_plus_long (maximum 5 différents)
+def test_mot_plus_long():
+    mots = ["poney", "girafe", "hippopotame"]
+    resultat = mot_plus_long(mots)
+
+def test_mot_plus_long_meme_nb_lettres():
+    mots = ["chaton", "girafe"]
+    resultat = mot_plus_long(mots)
+
 
 # ============================
 # Tests pour pourcentage_mots_max
