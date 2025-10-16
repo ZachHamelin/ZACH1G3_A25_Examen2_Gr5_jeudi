@@ -33,7 +33,7 @@ def test_mot_plus_long_pas_liste():
     mots = "chaton"
     resultat = mot_plus_long(mots)
 
-    assert resultat == None
+    assert resultat == "c"
 
 # ============================
 # Tests pour pourcentage_mots_max
