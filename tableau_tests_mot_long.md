@@ -3,15 +3,15 @@
 - Créer au plan de tests contenant au moins 5 cas de tests **DIFFÉRENTS/VARIÉS**.
 - Créer les tests unitaires pour tous les cas de tests.
 
-|                                 |           |                           |
-|---------------------------------|-----------|---------------------------|
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
+| mots                               | Résultat attendu | Message affiché |
+|------------------------------------|------------------|-----------------|
+| ["poney", "girafe", "hippopotame"] | hippopotame      |                 |
+| ["chaton", "girafe"]               | chaton et girafe |                 |
+| []                                 | None             |                 |
+| ["chaton", "poney", 42]            | chaton           |                 |
+| "chaton"                           | None             |                 |
+|                                    |                  |                 |
+|                                    |                  |                 |
 
 # Tests unitaires pour la fonction _pourcentage_mots_max_
 | **mots**                                     | **taille** | **Résultat attendu** | **Remarque ou Message affiché**                                      |
