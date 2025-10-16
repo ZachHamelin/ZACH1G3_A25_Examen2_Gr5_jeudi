@@ -21,6 +21,18 @@ def test_mot_plus_long_vide():
     mots = []
     resultat = mot_plus_long(mots)
 
+    assert resultat is None
+
+def test_mot_plus_long_chiffre():
+    mots = ["chaton", "poney", 42]
+    resultat = mot_plus_long(mots)
+
+    assert resultat == "chaton"
+
+def test_mot_plus_long_pas_liste():
+    mots = "chaton"
+    resultat = mot_plus_long(mots)
+
     assert resultat == None
 
 # ============================
