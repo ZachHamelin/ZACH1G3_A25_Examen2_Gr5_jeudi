@@ -77,7 +77,7 @@ def test_pourcentage_mots_max_tous_inferieur():
 
     assert resultat == 0.0
 
-def test_pourcentage_mots_max_tous_inferieur():
+def test_pourcentage_mots_max_tous_inferieur(): # Pas le test dans le tableau. Celui du tablau dit "chat" mais le test utilise seulement 7 (Zachary Hamelin)
     mots = 7
     resultat = pourcentage_mots_max(mots, 3)
 
