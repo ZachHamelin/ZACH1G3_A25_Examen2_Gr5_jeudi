@@ -51,6 +51,7 @@ def pourcentage_mots_max(mots, taille):
 if __name__ == "__main__":
     animaux = ["chat", "chien", "éléphant", "souris", "hippopotame", 42, None, "oiseau"]
     print("Mot le plus long :", mot_plus_long(animaux))
+    print("Pourcentage de mots :", pourcentage_mots_max(animaux, 5))
     pourcentage = pourcentage_mots_max(animaux, 5)
 
     if pourcentage is not None:
