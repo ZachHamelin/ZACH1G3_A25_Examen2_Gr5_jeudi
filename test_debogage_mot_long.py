@@ -8,10 +8,20 @@ def test_mot_plus_long():
     mots = ["poney", "girafe", "hippopotame"]
     resultat = mot_plus_long(mots)
 
-def test_mot_plus_long_meme_nb_lettres():
+    assert resultat == "hippopotame"
+
+
+def test_mot_plus_long_meme_nb_lettre():
     mots = ["chaton", "girafe"]
     resultat = mot_plus_long(mots)
 
+    assert resultat == "chaton", "girafe"
+
+def test_mot_plus_long_vide():
+    mots = []
+    resultat = mot_plus_long(mots)
+
+    assert resultat == None
 
 # ============================
 # Tests pour pourcentage_mots_max
@@ -27,8 +37,10 @@ def test_pourcentage_mots_max_tous_superieur():
     Lorsque tous les mots présents dépassent la taille,
     le pourcentage retourné est 100%.
     """
-    # TODO: Complèter ce test unitaire.
-    assert False
+    mots = ["éléphant", "hippopotame", "girafe"]
+    resultat = pourcentage_mots_max(mots, 4)
+
+    assert resultat == 100.0
 
 def test_pourcentage_mots_max_elements_invalides():
     mots = ["pamplemousse", 42, "cacahuète", None]
@@ -48,9 +60,10 @@ def test_pourcentage_mots_max_tous_inferieur():
     plus petits que la taille, le pourcentage
     retourné est 0.0%.
     """
-    # TODO: Ajouter le cas de test correspondant à la description
-    #       au plan de tests et complèter ce test unitaire.
-    assert False
+    mots = ["chat", "chien", "rat"]
+    resultat = pourcentage_mots_max(mots, 5)
+
+    assert resultat == 0.0
 
 def test_pourcentage_mots_max_tous_inferieur():
     mots = 7
